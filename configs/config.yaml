@@ -1,0 +1,19 @@
+# General Configuration
+start_date: "2015-01-01"
+end_date: null            # null = today
+universe: "nasdaq100"    
+price_frequency: "1d"
+timezone: "UTC"
+
+# Datos
+data_dir: "data"
+processed_dir: "data/processed"
+features_dir: "data/features"
+
+# Universe Ingest
+tickers_source:
+  type: "file"    
+  file_path: "configs/nasdaq100.csv"  
+
+# Range Volatility
+range_vol_window: 20
